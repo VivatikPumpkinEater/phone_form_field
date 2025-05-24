@@ -173,7 +173,7 @@ class PhoneFormFieldState extends FormFieldState<PhoneNumber> {
           builder: (context, _) => CountryButton(
             key: const ValueKey('country-code-chip'),
             isoCode: controller.value.isoCode,
-            onTap: widget.enabled ? () => _selectCountry(context) : null,
+            onTap: null,
             padding: _computeCountryButtonPadding(context),
             showFlag: widget.countryButtonStyle.showFlag,
             showIsoCode: widget.countryButtonStyle.showIsoCode,
